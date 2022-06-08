@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderCoffeeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="302dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="509dp"
+        android:contentDescription="@string/image_of_coffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/coffee" />
+
+    <TextView
+        android:id="@+id/coffeeSizeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="459dp"
+        android:text="@string/coffee_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/coffeeSizeSpinner"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="453dp"
+        android:contentDescription="@string/size_of_coffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coffeeSizeTV"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/coffeeQuantityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="372dp"
+        android:text="@string/coffee_quantity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeSizeSpinner"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Coffee Quantity" />
+
+    <Spinner
+        android:id="@+id/coffeeQuantitySpinner"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="370dp"
+        android:contentDescription="@string/quantity_of_coffees"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coffeeQuantityTV"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeSizeSpinner" />
+
+    <CheckBox
+        android:id="@+id/creamCB"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/cream"
+        android:onClick="creamCBClicked"
+        app:layout_constraintBottom_toTopOf="@+id/milkCB"
+        app:layout_constraintEnd_toStartOf="@+id/syrupCB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeQuantityTV" />
+
+    <CheckBox
+        android:id="@+id/milkCB"
+        android:layout_width="84dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/milk"
+        android:onClick="milkCBClicked"
+        app:layout_constraintBottom_toTopOf="@+id/whippedCreamCB"
+        app:layout_constraintEnd_toStartOf="@+id/caramelCB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creamCB" />
+
+    <CheckBox
+        android:id="@+id/whippedCreamCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/whipped_cream"
+        android:onClick="whippedCreamCBClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/caramelCB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milkCB" />
+
+    <CheckBox
+        android:id="@+id/syrupCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/syrup"
+        android:onClick="syrupCBClicked"
+        app:layout_constraintBottom_toTopOf="@+id/caramelCB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/creamCB"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeQuantitySpinner" />
+
+    <CheckBox
+        android:id="@+id/caramelCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="129dp"
+        android:text="@string/caramel"
+        android:onClick="caramelCBClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toEndOf="@+id/milkCB"
+        app:layout_constraintTop_toBottomOf="@+id/syrupCB"
+        app:layout_constraintVertical_bias="0.71000004" />
+
+    <Button
+        android:id="@+id/backButtonCoffee"
+        android:layout_width="83dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/backCoffee"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/coffeeAddOrderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="67dp"
+        android:text="@string/add_to_order"
+        android:onClick="addToOrderCoffee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caramelCB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

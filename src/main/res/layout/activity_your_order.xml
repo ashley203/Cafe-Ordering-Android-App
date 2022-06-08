@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YourOrderActivity">
+
+    <TextView
+        android:id="@+id/yourOrderTV"
+        android:layout_width="71dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="646dp"
+        android:text="@string/your_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/yourOrderListView"
+        android:layout_width="362dp"
+        android:layout_height="326dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="293dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderTV" />
+
+    <TextView
+        android:id="@+id/yourOrderSubtotalTV"
+        android:layout_width="132dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/subtotal"
+        app:layout_constraintBottom_toTopOf="@+id/yourOrderSalesTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderListView" />
+
+    <TextView
+        android:id="@+id/yourOrderSalesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/sales_tax"
+        app:layout_constraintBottom_toTopOf="@+id/yourOrderTotalTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderSubtotalTV" />
+
+    <TextView
+        android:id="@+id/yourOrderTotalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="94dp"
+        android:text="@string/total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/placeYourOrderBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderSubtotalTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/backButtonYourOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/backYourOrder"
+        app:layout_constraintBottom_toTopOf="@+id/yourOrderListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/placeYourOrderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/place_order"
+        android:onClick="placeYourOrder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yourOrderTotalTV"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderListView" />
+
+    <TextView
+        android:id="@+id/removeOrderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="130dp"
+        android:text="@string/select_item_to_remove_it"
+        app:layout_constraintBottom_toTopOf="@+id/placeYourOrderBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrderListView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

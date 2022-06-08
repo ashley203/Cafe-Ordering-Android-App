@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Project5</string>
+    <string name="DonutViewButton">Button</string>
+    <string name="image_of_donut">Image of Donut</string>
+    <string name="coffee_size">Coffee Size</string>
+    <string name="image_of_coffee">Image of Coffee</string>
+    <string name="item_selected">item selected</string>
+    <string name="quantity_of_coffees">Quantity of Coffees</string>
+    <string name="size_of_coffee">Size of Coffee</string>
+    <string name="coffee_quantity">Coffee Quantity</string>
+    <string name="caramel">Caramel</string>
+    <string name="syrup">Syrup</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="milk">Milk</string>
+    <string name="cream">Cream</string>
+    <string name="store_orders">Store Orders</string>
+    <string name="total">Total</string>
+    <string name="sales_tax">Sales Tax</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="your_order">Your Order</string>
+    <string name="backCoffee">Back</string>
+    <string name="add_to_order">Add to Order</string>
+    <string name="backDonut">Back</string>
+    <string name="remove_order">Remove Order</string>
+    <string name="orders_displayed_here">Orders Displayed Here</string>
+    <string name="backYourOrder">Back</string>
+    <string name="select_item_to_remove_it">Select item to remove it</string>
+    <string name="place_order">Place Order</string>
+    <string name="backStoreOrders">Back</string>
+    <string name="quantity">Quantity</string>
+    <string name="todo">TODO</string>
+    <string name="addSign">+</string>
+    <string name="minusSign">-</string>
+    <string-array name="itemNames">
+        <item>Jelly</item>
+        <item>Old Fashioned</item>
+        <item>Powdered</item>
+        <item>Sugar</item>
+        <item>Glazed</item>
+        <item>Strawberry</item>
+        <item>Cruller</item>
+        <item>Boston Kreme</item>
+        <item>Chocolate</item>
+        <item>Blueberry</item>
+        <item>Maple</item>
+        <item>Red Velvet</item>
+    </string-array>
+</resources>
+
